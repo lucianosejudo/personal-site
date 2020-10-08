@@ -9,14 +9,14 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // Of course you can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-cara/gatsby-config.js
-    siteTitle: `Cara`,
+    siteTitle: `Luciano Sejudo`,
     siteTitleAlt: `Luciano Sejudo - Web Developer`,
-    siteHeadline: `Cara - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://cara.lekoarts.de`,
-    siteDescription: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+    siteHeadline: `Luciano Sejudo - Web Developer`,
+    siteUrl: `https://lucianosejudo.com`,
+    siteDescription: `Luciano Sejudo personal site and portfolio`,
     siteLanguage: `en`,
-    siteImage: `/banner.jpg`,
-    author: `@lekoarts_de`,
+    siteImage: `/react-logo.jpg`,
+    author: `@lucianosejudo`,
   },
   plugins: [
     {
@@ -33,9 +33,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Cara - @lekoarts/gatsby-theme-cara`,
-        short_name: `Cara`,
-        description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+        name: `Luciano Sejudo - Web Developer`,
+        short_name: `Luciano Sejudo`,
+        description: `Luciano Sejudo personal site and portfolio`,
         start_url: `/`,
         background_color: `#141821`,
         theme_color: `#f6ad55`,
