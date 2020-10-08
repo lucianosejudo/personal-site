@@ -31,6 +31,13 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'lucianosejudo.surge.sh',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Luciano Sejudo - Web Developer`,
