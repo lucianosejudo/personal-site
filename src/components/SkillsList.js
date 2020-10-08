@@ -1,11 +1,47 @@
 import React from 'react'
 
-const skills = ['js', 'react', 'angular', 'redux', 'redux-saga']
+const skills = [
+{
+    name: 'js',
+},
+{
+    name: 'react'
+},
+{
+    name: 'redux'
+},
+{
+    name: 'redux-saga'
+},
+{
+    name: 'angular',
+    height: 65,
+},
+{
+    name: 'nodejs',
+    height: 65,
+},
+{
+    name: 'mongo',
+},
+{
+    name: 'postman',
+}
+]
+
 
 export default function SkillsList() {
     return (
-        <div>
-            {skills.map(skill => <img height="60px" src={`https://www.anychart.com/_design/img/upload/plugins/nodejs-logo.png`} alt={`${skill} logo`} />)}
+        <div style={{ display: 'flex', justifyContent: 'space-between'}}>
+            {skills.map(skill =>
+                <img
+                    style={{
+                        height: skill.height || 60,
+                    }}
+                    src={`${skill.name}-logo.png`}
+                    alt={`${skill} logo`}
+                />)
+            }
         </div>
     )
 }
