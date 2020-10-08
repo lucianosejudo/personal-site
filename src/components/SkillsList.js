@@ -14,25 +14,27 @@ const skills = [
     name: 'redux-saga'
 },
 {
-    name: 'angular',
-    height: 65,
-},
-{
     name: 'nodejs',
     height: 65,
 },
 {
     name: 'mongo',
+    height: 55,
 },
 {
     name: 'postman',
+},
+
+{
+    name: 'angular',
+    height: 65,
 }
 ]
 
 
 export default function SkillsList() {
     return (
-        <div style={{ display: 'flex', justifyContent: 'space-between'}}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap'}}>
             {skills.map(skill =>
                 <img
                     style={{
